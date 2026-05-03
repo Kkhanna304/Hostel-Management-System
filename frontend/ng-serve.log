@@ -178,3 +178,44 @@ Application bundle generation failed. [1.312 seconds] - 2026-05-03T15:07:49.228Z
 Application bundle generation complete. [0.278 seconds] - 2026-05-03T15:07:50.583Z
 
 Page reload sent to client(s).
+[33m>[39m Changes detected. Rebuilding...
+[32m√[39m Changes detected. Rebuilding...
+Application bundle generation failed. [3.384 seconds] - 2026-05-03T15:45:14.451Z
+
+[33m>[39m Changes detected. Rebuilding...
+[32m√[39m Changes detected. Rebuilding...
+[1mInitial chunk files[22m[2m | [22m[1mNames[22m           [2m | [22m [1mRaw size[22m
+[32mstyles.css[39m         [2m | [22m[2mstyles[22m          [2m | [22m[36m282.03 kB[39m[2m | [22m
+[32mmain.js[39m            [2m | [22m[2mmain[22m            [2m | [22m [36m15.93 kB[39m[2m | [22m
+
+[1m [22m                  [2m | [22m[1mInitial total[22m   [2m | [22m[1m297.95 kB[22m
+
+[1mLazy chunk files[22m   [2m | [22m[1mNames[22m           [2m | [22m [1mRaw size[22m
+[32mchunk-BPQCMWH4.js[39m  [2m | [22m[2mrooms[22m           [2m | [22m [36m34.44 kB[39m[2m | [22m
+[32mchunk-3IJSHBNG.js[39m  [2m | [22m[2mdashboard[22m       [2m | [22m [36m31.25 kB[39m[2m | [22m
+[32mchunk-WFNUZPNV.js[39m  [2m | [22m[2mlogin[22m           [2m | [22m [36m20.61 kB[39m[2m | [22m
+[32mchunk-WT4SWXGD.js[39m  [2m | [22m[2mvisitors[22m        [2m | [22m [36m20.60 kB[39m[2m | [22m
+[32mchunk-NPUABQSA.js[39m  [2m | [22m[2mpayments[22m        [2m | [22m [36m18.95 kB[39m[2m | [22m
+[32mchunk-G2O4N3UX.js[39m  [2m | [22m[2madmin-visitors[22m  [2m | [22m [36m13.68 kB[39m[2m | [22m
+[32mchunk-LWPTVCAK.js[39m  [2m | [22m[2madmin-complaints[22m[2m | [22m [36m12.28 kB[39m[2m | [22m
+[32mchunk-ABTQWEBO.js[39m  [2m | [22m[2madmin-leaves[22m    [2m | [22m [36m12.03 kB[39m[2m | [22m
+[32mchunk-OESEFMT7.js[39m  [2m | [22m[2madmin-students[22m  [2m | [22m [36m11.12 kB[39m[2m | [22m
+[32mchunk-5ZDNB6GW.js[39m  [2m | [22m[2mhelp[22m            [2m | [22m [36m10.62 kB[39m[2m | [22m
+[32mchunk-VOSBTYXO.js[39m  [2m | [22m[2mleaves[22m          [2m | [22m  [36m9.92 kB[39m[2m | [22m
+[32mchunk-HMPSVZHB.js[39m  [2m | [22m[2mstudent-fees[22m    [2m | [22m  [36m9.39 kB[39m[2m | [22m
+[32mchunk-E2W3UJJK.js[39m  [2m | [22m[2mprofile[22m         [2m | [22m  [36m8.98 kB[39m[2m | [22m
+[32mchunk-4GB4JIZW.js[39m  [2m | [22m[2mcomplaints[22m      [2m | [22m  [36m8.77 kB[39m[2m | [22m
+[32mchunk-OZBTCFCC.js[39m  [2m | [22m[2mregister[22m        [2m | [22m  [36m7.64 kB[39m[2m | [22m
+[2m...and 2 more lazy chunks files. Use "--verbose" to show all the files.[22m
+
+Application bundle generation complete. [0.684 seconds] - 2026-05-03T15:45:15.181Z
+
+Page reload sent to client(s).
+[33m>[39m Changes detected. Rebuilding...
+[32m√[39m Changes detected. Rebuilding...
+[1mInitial chunk files[22m[2m | [22m[1mNames[22m[2m | [22m[1mRaw size[22m
+[32mmain.js[39m            [2m | [22m[2mmain[22m [2m | [22m[36m15.95 kB[39m[2m | [22m
+
+Application bundle generation complete. [0.181 seconds] - 2026-05-03T15:45:20.241Z
+
+Page reload sent to client(s).
