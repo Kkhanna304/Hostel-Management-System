@@ -1,0 +1,75 @@
+<div class="container">
+  <h2 class="mb-4">Visitor Requests</h2>
+
+  <div class="card p-3 mb-4 shadow-sm">
+    <h5>Add Visitor Request</h5>
+    <input class="form-control mb-2" placeholder="Visitor name" [(ngModel)]="visitorName">
+    <input class="form-control mb-2" placeholder="Relation" [(ngModel)]="relation">
+    <input type="date" class="form-control mb-2" [(ngModel)]="visitDate">
+    <button class="btn btn-primary"
+      [disabled]="!visitorName || !relation || !visitDate"
+      (click)="addVisitor()">
+      Submit Visitor Request
+    </button>
+  </div>
+
+  <div class="card p-3 shadow-sm">
+    <h5>Visitor History</h5>
+    <div *ngIf="visitors.length === 0" class="text-muted">No visitor requests found</div>
+
+    <div *ngFor="let visitor of visitors" class="border p-2 mb-2 rounded">
+      <div class="d-flex justify-content-between">
+        <strong>{{ visitor.visitorName }}</strong>
+        <span class="badge bg-secondary">{{ visitor.status }}</span>
+      </div>
+      <div>Relation: {{ visitor.relation }}</div>
+      <div>Visit Date: {{ visitor.visitDate | date:'mediumDate' }}</div>
+      <div *ngIf="visitor.adminNote">Admin Note: {{ visitor.adminNote }}</div>
+
+      <div class="visitor-id-card mt-3" *ngIf="visitor.status === 'approved'">
+        <div class="id-card-top">
+          <div>
+            <span class="id-card-label">Hostel Name</span>
+            <h5>Drowsy Hostel Management</h5>
+          </div>
+          <span class="badge" [class.bg-success]="!isCardExpired(visitor)" [class.bg-danger]="isCardExpired(visitor)">
+            {{ isCardExpired(visitor) ? 'Expired' : 'Valid' }}
+          </span>
+        </div>
+
+        <div class="id-card-body">
+          <div>
+            <span class="id-card-label">Visitor Name</span>
+            <strong>{{ visitor.visitorName }}</strong>
+          </div>
+          <div>
+            <span class="id-card-label">Student Name</span>
+            <strong>{{ visitor.student?.name || 'Student' }}</strong>
+          </div>
+          <div>
+            <span class="id-card-label">Visit Date</span>
+            <strong>{{ visitor.visitDate | date:'mediumDate' }}</strong>
+          </div>
+          <div>
+            <span class="id-card-label">Visitor ID</span>
+            <strong>{{ visitor.visitorId }}</strong>
+          </div>
+          <div>
+            <span class="id-card-label">Valid Until</span>
+            <strong>{{ visitor.idCardExpiresAt | date:'medium' }}</strong>
+          </div>
+          <div class="qr-placeholder">QR</div>
+        </div>
+
+        <div class="d-flex gap-2 flex-wrap mt-3 no-print" *ngIf="!isCardExpired(visitor)">
+          <button class="btn btn-outline-primary btn-sm" (click)="downloadIdCard(visitor)">
+            Download ID Card
+          </button>
+          <button class="btn btn-outline-secondary btn-sm" (click)="printIdCard(visitor)">
+            Print
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,52 @@
+<div class="container help-page">
+  <div class="d-flex justify-content-between align-items-center mb-4 flex-wrap gap-2">
+    <div>
+      <h2 class="mb-1">Help</h2>
+      <p class="text-muted mb-0">Ask a common hostel management question.</p>
+    </div>
+  </div>
+
+  <div class="row g-4">
+    <div class="col-lg-4">
+      <div class="card p-3 shadow-sm h-100">
+        <h5>Common Questions</h5>
+        <button
+          class="btn btn-outline-primary text-start mb-2"
+          *ngFor="let item of quickAnswers"
+          (click)="ask(item.question)">
+          {{ item.question }}
+        </button>
+      </div>
+    </div>
+
+    <div class="col-lg-8">
+      <div class="chat-card card shadow-sm">
+        <div class="chat-header">
+          <div>
+            <h5 class="mb-0">AI Help Assistant</h5>
+            <small>Rule-based support chatbot</small>
+          </div>
+        </div>
+
+        <div class="chat-window">
+          <div
+            class="chat-message"
+            *ngFor="let message of messages"
+            [class.user-message]="message.sender === 'user'"
+            [class.bot-message]="message.sender === 'bot'">
+            {{ message.text }}
+          </div>
+        </div>
+
+        <div class="chat-input">
+          <input
+            class="form-control"
+            placeholder="Type your question..."
+            [(ngModel)]="userMessage"
+            (keyup.enter)="sendMessage()">
+          <button class="btn btn-primary" (click)="sendMessage()" [disabled]="!userMessage.trim()">Send</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

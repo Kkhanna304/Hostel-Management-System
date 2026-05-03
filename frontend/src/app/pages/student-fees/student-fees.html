@@ -1,0 +1,39 @@
+<div class="container">
+  <h2 class="mb-4">Fees & Payments</h2>
+
+  <div class="row mb-3">
+    <div class="col-md-6 mb-3">
+      <div class="card p-3 shadow-sm">
+        <h5>Pending Dues</h5>
+        <h3>Rs. {{ getPendingDues() }}</h3>
+      </div>
+    </div>
+    <div class="col-md-6 mb-3">
+      <div class="card p-3 shadow-sm">
+        <h5>Total Paid</h5>
+        <h3>Rs. {{ getPaidTotal() }}</h3>
+      </div>
+    </div>
+  </div>
+
+  <div class="card p-3 shadow-sm">
+    <h5>Payment History</h5>
+
+    <div *ngIf="payments.length === 0" class="text-muted">No payment records found</div>
+
+    <div *ngFor="let payment of payments" class="border p-2 mb-2 rounded">
+      <div class="d-flex justify-content-between">
+        <strong>{{ payment.feeType }}</strong>
+        <span class="badge bg-secondary">{{ payment.status }}</span>
+      </div>
+      <div>Amount: Rs. {{ payment.amount }}</div>
+      <div>Late Fee: Rs. {{ payment.lateFee || 0 }}</div>
+      <div>Due: {{ payment.dueDate | date:'mediumDate' }}</div>
+      <button class="btn btn-outline-primary btn-sm mt-2"
+        *ngIf="payment.status === 'paid'"
+        (click)="downloadReceipt(payment._id)">
+        Download Receipt
+      </button>
+    </div>
+  </div>
+</div>

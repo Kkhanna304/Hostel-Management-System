@@ -1,0 +1,185 @@
+<div class="container">
+  <h2 class="mb-4">Dashboard</h2>
+
+  <div *ngIf="getRole() === 'admin'">
+    <div class="row">
+      <div class="col-md-4 mb-3">
+        <div class="card p-3 text-center shadow-sm">
+          <h5>Total Students</h5>
+          <h3>{{ stats.totalStudents || 0 }}</h3>
+        </div>
+      </div>
+      <div class="col-md-4 mb-3">
+        <div class="card p-3 text-center shadow-sm">
+          <h5>Total Rooms</h5>
+          <h3>{{ stats.totalRooms || 0 }}</h3>
+        </div>
+      </div>
+      <div class="col-md-4 mb-3">
+        <div class="card p-3 text-center shadow-sm">
+          <h5>Available Rooms</h5>
+          <h3>{{ stats.availableRooms || 0 }}</h3>
+        </div>
+      </div>
+      <div class="col-md-4 mb-3">
+        <div class="card p-3 text-center shadow-sm">
+          <h5>Occupied Rooms</h5>
+          <h3>{{ stats.occupiedRooms || 0 }}</h3>
+        </div>
+      </div>
+      <div class="col-md-4 mb-3">
+        <div class="card p-3 text-center shadow-sm">
+          <h5>Unassigned Students</h5>
+          <h3>{{ stats.unassignedStudents || 0 }}</h3>
+        </div>
+      </div>
+      <div class="col-md-4 mb-3">
+        <div class="card p-3 text-center shadow-sm">
+          <h5>Pending Payments</h5>
+          <h3>{{ stats.pendingPayments || 0 }}</h3>
+        </div>
+      </div>
+      <div class="col-md-4 mb-3">
+        <div class="card p-3 text-center shadow-sm">
+          <h5>Pending Leaves</h5>
+          <h3>{{ stats.pendingLeaves || 0 }}</h3>
+        </div>
+      </div>
+      <div class="col-md-4 mb-3">
+        <div class="card p-3 text-center shadow-sm">
+          <h5>Pending Visitors</h5>
+          <h3>{{ stats.pendingVisitors || 0 }}</h3>
+        </div>
+      </div>
+      <div class="col-md-4 mb-3">
+        <div class="card p-3 text-center shadow-sm">
+          <h5>Room Requests</h5>
+          <h3>{{ stats.pendingRoomRequests || 0 }}</h3>
+        </div>
+      </div>
+      <div class="col-md-4 mb-3">
+        <div class="card p-3 text-center shadow-sm">
+          <h5>Pending Complaints</h5>
+          <h3>{{ stats.pendingComplaints || 0 }}</h3>
+        </div>
+      </div>
+      <div class="col-md-4 mb-3">
+        <div class="card p-3 text-center shadow-sm">
+          <h5>Total Revenue</h5>
+          <h3>Rs. {{ stats.totalRevenue || 0 }}</h3>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-md-6 mb-3">
+        <div class="card p-3 shadow-sm">
+          <h5>Admin Notifications</h5>
+          <div *ngIf="getAdminNotifications().length === 0" class="text-muted">Everything is clear</div>
+          <div *ngFor="let notification of getAdminNotifications()" class="alert alert-warning py-2 mb-2">
+            {{ notification }}
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-6 mb-3">
+        <div class="card p-3 shadow-sm">
+          <h5>Recent Payments</h5>
+          <div *ngIf="!stats.recentPayments?.length" class="text-muted">No payment activity</div>
+          <div *ngFor="let payment of stats.recentPayments" class="border-bottom py-2">
+            <strong>{{ payment.student?.name || 'Student' }}</strong>
+            <span class="badge bg-secondary ms-2">{{ payment.status }}</span>
+            <div class="text-muted">Rs. {{ payment.amount + (payment.lateFee || 0) }} | {{ payment.feeType }}</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-12 mb-3">
+        <div class="card p-3 shadow-sm">
+          <h5>Recent Complaints</h5>
+          <div *ngIf="!stats.recentComplaints?.length" class="text-muted">No complaints yet</div>
+          <div *ngFor="let complaint of stats.recentComplaints" class="border-bottom py-2">
+            <strong>{{ complaint.student?.name || 'Student' }}</strong>
+            <span class="badge bg-secondary ms-2">{{ complaint.status }}</span>
+            <div>{{ complaint.message }}</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div *ngIf="getRole() === 'student'">
+    <div class="row">
+      <div class="col-md-4 mb-3">
+        <div class="card p-3 shadow-sm">
+          <h5>My Room</h5>
+          <h3>{{ currentRoom ? ('Room ' + currentRoom.roomNumber) : 'Not Assigned' }}</h3>
+          <div class="text-muted" *ngIf="currentRoom">
+            {{ currentRoom.occupants.length }} / {{ currentRoom.capacity }} occupied
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4 mb-3">
+        <div class="card p-3 shadow-sm">
+          <h5>Pending Fees</h5>
+          <h3>Rs. {{ getPendingDues() }}</h3>
+        </div>
+      </div>
+
+      <div class="col-md-4 mb-3">
+        <div class="card p-3 shadow-sm">
+          <h5>Total Paid</h5>
+          <h3>Rs. {{ getTotalPaid() }}</h3>
+        </div>
+      </div>
+
+      <div class="col-md-4 mb-3">
+        <div class="card p-3 shadow-sm">
+          <h5>Leave Status</h5>
+          <h3>{{ getLatest(leaves)?.status || 'No Requests' }}</h3>
+        </div>
+      </div>
+
+      <div class="col-md-4 mb-3">
+        <div class="card p-3 shadow-sm">
+          <h5>Complaint Status</h5>
+          <h3>{{ getLatest(complaints)?.status || 'No Complaints' }}</h3>
+        </div>
+      </div>
+
+      <div class="col-md-4 mb-3">
+        <div class="card p-3 shadow-sm">
+          <h5>Visitor Status</h5>
+          <h3>{{ getLatest(visitors)?.status || 'No Visitors' }}</h3>
+        </div>
+      </div>
+    </div>
+
+    <div class="card p-3 mb-3 shadow-sm">
+      <h5>Notifications</h5>
+      <div *ngIf="notifications.length === 0" class="text-muted">No new notifications</div>
+      <div *ngFor="let notification of notifications" class="alert alert-info py-2 mb-2">
+        {{ notification }}
+      </div>
+    </div>
+
+    <div class="card p-3 shadow-sm">
+      <h5>Recent Payments</h5>
+      <div *ngIf="studentPayments.length === 0" class="text-muted">No payments found</div>
+
+      <div *ngFor="let payment of studentPayments.slice(0, 4)" class="border p-2 mb-2 rounded">
+        <div class="d-flex justify-content-between">
+          <strong>Rs. {{ payment.amount }}</strong>
+          <span class="badge bg-secondary">{{ payment.status }}</span>
+        </div>
+        <div class="text-muted">{{ payment.feeType }} | Due: {{ payment.dueDate | date:'mediumDate' }}</div>
+        <button class="btn btn-outline-primary btn-sm mt-2"
+          *ngIf="payment.status === 'paid'"
+          (click)="downloadReceipt(payment._id)">
+          Download Receipt
+        </button>
+      </div>
+    </div>
+  </div>
+</div>

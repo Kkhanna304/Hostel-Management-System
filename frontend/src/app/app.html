@@ -1,0 +1,79 @@
+<nav class="app-header navbar navbar-dark px-3" *ngIf="showLayout">
+  <span class="navbar-brand mb-0 h1">Hostel System</span>
+  <div class="d-flex gap-2 align-items-center">
+    <a class="header-link" routerLink="/help" routerLinkActive="active">Help</a>
+    <a class="header-link" routerLink="/contact" routerLinkActive="active">Contact</a>
+  </div>
+</nav>
+
+<div [class.app-shell]="showLayout">
+
+  <aside class="app-sidebar"
+    *ngIf="showLayout">
+
+    <ul class="nav flex-column">
+
+      <li class="nav-item">
+        <a class="nav-link" routerLink="/dashboard">Dashboard</a>
+      </li>
+
+      <li class="nav-item" *ngIf="getRole() === 'admin'">
+        <a class="nav-link" routerLink="/register">Register</a>
+      </li>
+
+      <li class="nav-item" *ngIf="getRole() === 'admin'">
+        <a class="nav-link" routerLink="/admin-students">Students</a>
+      </li>
+
+      <li class="nav-item" *ngIf="getRole() === 'student'">
+        <a class="nav-link" routerLink="/profile">My Profile</a>
+      </li>
+
+      <li class="nav-item" *ngIf="getRole() === 'student'">
+        <a class="nav-link" routerLink="/student-fees">Fees</a>
+      </li>
+
+      <li class="nav-item" *ngIf="getRole() === 'student'">
+        <a class="nav-link" routerLink="/leaves">Leave Requests</a>
+      </li>
+
+      <li class="nav-item" *ngIf="getRole() === 'student'">
+        <a class="nav-link" routerLink="/complaints">Complaints</a>
+      </li>
+
+      <li class="nav-item" *ngIf="getRole() === 'student'">
+        <a class="nav-link" routerLink="/visitors">Visitors</a>
+      </li>
+
+      <li class="nav-item" *ngIf="getRole() === 'admin' || getRole() === 'student'">
+        <a class="nav-link" routerLink="/rooms">Rooms</a>
+      </li>
+
+      <li class="nav-item" *ngIf="getRole() === 'admin'">
+        <a class="nav-link" routerLink="/payments">Payments</a>
+      </li>
+
+      <li class="nav-item" *ngIf="getRole() === 'admin'">
+        <a class="nav-link" routerLink="/admin-leaves">Leaves</a>
+      </li>
+
+      <li class="nav-item" *ngIf="getRole() === 'admin'">
+        <a class="nav-link" routerLink="/admin-complaints">Complaints</a>
+      </li>
+
+      <li class="nav-item" *ngIf="getRole() === 'admin'">
+        <a class="nav-link" routerLink="/admin-visitors">Visitors</a>
+      </li>
+
+      <li class="nav-item mt-3">
+        <a class="nav-link text-danger" (click)="logout()">Logout</a>
+      </li>
+
+    </ul>
+  </aside>
+
+  <main [class.app-content]="showLayout">
+    <router-outlet></router-outlet>
+  </main>
+
+</div>

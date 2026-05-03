@@ -1,0 +1,60 @@
+<section class="login-page">
+  <div class="sky-glow"></div>
+
+  <div class="hostel-scene" aria-hidden="true">
+    <div class="moon"></div>
+    <div class="cloud cloud-one"></div>
+    <div class="cloud cloud-two"></div>
+
+    <div class="building building-back">
+      <span></span><span></span><span></span><span></span>
+      <span></span><span></span><span></span><span></span>
+    </div>
+
+    <div class="building building-main">
+      <div class="roof"></div>
+      <div class="door"></div>
+      <span></span><span></span><span></span><span></span>
+      <span></span><span></span><span></span><span></span>
+      <span></span><span></span><span></span><span></span>
+    </div>
+
+    <div class="path"></div>
+  </div>
+
+  <div class="login-card">
+    <div class="brand-block">
+      <div class="brand-mark">D</div>
+      <div>
+        <h1>Drowsy Hostel</h1>
+        <p>Management Portal</p>
+      </div>
+    </div>
+
+    <form (ngSubmit)="onLogin()" class="login-form">
+      <label for="email">Email</label>
+      <input
+        id="email"
+        type="email"
+        class="form-control"
+        placeholder="admin or student email"
+        [(ngModel)]="email"
+        name="email"
+        required>
+
+      <label for="password">Password</label>
+      <input
+        id="password"
+        type="password"
+        class="form-control"
+        placeholder="Enter password"
+        [(ngModel)]="password"
+        name="password"
+        required>
+
+      <button class="login-button" type="submit">
+        Sign In
+      </button>
+    </form>
+  </div>
+</section>

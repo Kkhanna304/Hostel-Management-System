@@ -1,0 +1,27 @@
+<div class="container">
+  <h2 class="mb-4">Leave Requests</h2>
+
+  <div class="card p-3 mb-4 shadow-sm">
+    <h5>Apply Leave</h5>
+    <input type="date" class="form-control mb-2" [(ngModel)]="fromDate">
+    <input type="date" class="form-control mb-2" [(ngModel)]="toDate">
+    <textarea class="form-control mb-2" rows="3" placeholder="Reason" [(ngModel)]="reason"></textarea>
+    <button class="btn btn-primary" [disabled]="!fromDate || !toDate || !reason" (click)="applyLeave()">
+      Submit Leave Request
+    </button>
+  </div>
+
+  <div class="card p-3 shadow-sm">
+    <h5>Leave History</h5>
+    <div *ngIf="leaves.length === 0" class="text-muted">No leave requests found</div>
+
+    <div *ngFor="let leave of leaves" class="border p-2 mb-2 rounded">
+      <div class="d-flex justify-content-between">
+        <strong>{{ leave.fromDate | date:'mediumDate' }} - {{ leave.toDate | date:'mediumDate' }}</strong>
+        <span class="badge bg-secondary">{{ leave.status }}</span>
+      </div>
+      <div>Reason: {{ leave.reason }}</div>
+      <div *ngIf="leave.adminNote">Admin Note: {{ leave.adminNote }}</div>
+    </div>
+  </div>
+</div>

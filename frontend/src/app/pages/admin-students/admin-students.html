@@ -1,0 +1,37 @@
+<div class="container">
+  <h2 class="mb-4">Students</h2>
+
+  <div class="card p-3 mb-3 shadow-sm">
+    <div class="row">
+      <div class="col-md-8 mb-2">
+        <input class="form-control" placeholder="Search by name or email" [(ngModel)]="search">
+      </div>
+      <div class="col-md-4 mb-2">
+        <select class="form-select" [(ngModel)]="filter">
+          <option value="all">All Students</option>
+          <option value="assigned">Assigned Room</option>
+          <option value="unassigned">Unassigned</option>
+        </select>
+      </div>
+    </div>
+  </div>
+
+  <div class="card p-3 shadow-sm">
+    <h5>Student List</h5>
+    <div *ngIf="filteredStudents().length === 0" class="text-muted">No students found</div>
+
+    <div *ngFor="let student of filteredStudents()" class="border p-2 mb-2 rounded">
+      <div class="d-flex justify-content-between">
+        <div>
+          <strong>{{ student.name }}</strong>
+          <div class="text-muted">{{ student.email }}</div>
+          <div>Room: {{ getStudentRoom(student._id)?.roomNumber || 'Not assigned' }}</div>
+          <div>Joined: {{ student.createdAt | date:'mediumDate' }}</div>
+        </div>
+        <button class="btn btn-outline-danger btn-sm" (click)="deleteStudent(student._id)">
+          Delete
+        </button>
+      </div>
+    </div>
+  </div>
+</div>

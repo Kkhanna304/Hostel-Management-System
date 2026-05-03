@@ -1,0 +1,37 @@
+<div class="container">
+  <h2 class="mb-4">Complaint Management</h2>
+
+  <div class="card p-3 mb-3 shadow-sm">
+    <div class="row">
+      <div class="col-md-4 mb-2">
+        <select class="form-select" [(ngModel)]="statusFilter">
+          <option value="all">All</option>
+          <option value="pending">Pending</option>
+          <option value="in_progress">In Progress</option>
+          <option value="resolved">Resolved</option>
+          <option value="rejected">Rejected</option>
+        </select>
+      </div>
+      <div class="col-md-8 mb-2">
+        <input class="form-control" placeholder="Admin note" [(ngModel)]="adminNote">
+      </div>
+    </div>
+  </div>
+
+  <div class="card p-3 shadow-sm">
+    <div *ngIf="filteredComplaints().length === 0" class="text-muted">No complaints found</div>
+    <div *ngFor="let complaint of filteredComplaints()" class="border p-2 mb-2 rounded">
+      <div class="d-flex justify-content-between">
+        <strong>{{ complaint.student?.name }}</strong>
+        <span class="badge bg-secondary">{{ complaint.status }}</span>
+      </div>
+      <div>{{ complaint.message }}</div>
+      <div *ngIf="complaint.adminNote">Admin Note: {{ complaint.adminNote }}</div>
+      <div class="d-flex gap-2 mt-2">
+        <button class="btn btn-outline-primary btn-sm" (click)="updateComplaint(complaint._id, 'in_progress')">In Progress</button>
+        <button class="btn btn-success btn-sm" (click)="updateComplaint(complaint._id, 'resolved')">Resolve</button>
+        <button class="btn btn-outline-danger btn-sm" (click)="updateComplaint(complaint._id, 'rejected')">Reject</button>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,94 @@
+<div class="container">
+
+  <h2 class="mb-4">Payments</h2>
+
+  <div class="card p-3 mb-4 shadow-sm">
+    <h5>Add Fee / Payment Record</h5>
+
+    <div class="row g-3 align-items-end">
+      <div class="col-md-7">
+        <label class="form-label">Student</label>
+        <select class="form-select" [(ngModel)]="studentId">
+          <option value="">Select Student</option>
+
+          <option *ngFor="let student of students" [value]="student._id">
+            {{ student.name }}
+          </option>
+        </select>
+      </div>
+
+      <div class="col-md-5">
+        <label class="form-label">Payment Amount</label>
+        <input type="number" class="form-control"
+          min="1"
+          placeholder="Enter amount"
+          [(ngModel)]="amount">
+      </div>
+
+      <div class="col-12">
+        <button class="btn btn-success"
+          [disabled]="!studentId || !amount || amount <= 0"
+          (click)="addPayment()">
+          Add Record
+        </button>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="card p-3 shadow-sm">
+    <h5>All Payments</h5>
+
+    <div class="row mb-3">
+      <div class="col-md-8 mb-2">
+        <input class="form-control" placeholder="Search student, email, or fee type" [(ngModel)]="search">
+      </div>
+      <div class="col-md-4 mb-2">
+        <select class="form-select" [(ngModel)]="statusFilter">
+          <option value="all">All Statuses</option>
+          <option value="pending">Pending</option>
+          <option value="paid">Paid</option>
+          <option value="failed">Failed</option>
+          <option value="refunded">Refunded</option>
+        </select>
+      </div>
+    </div>
+
+    <div *ngIf="filteredPayments().length === 0" class="text-muted">
+      No payments found
+    </div>
+
+    <div *ngFor="let p of filteredPayments()" class="border p-2 mb-2 rounded">
+
+      <strong>{{ p.student?.name }}</strong>
+
+      <div>Fee: {{ p.feeType }}</div>
+      <div>Amount: Rs. {{ p.amount }}</div>
+      <div>Late Fee: Rs. {{ p.lateFee || 0 }}</div>
+      <div>Due Date: {{ p.dueDate | date:'mediumDate' }}</div>
+      <div>Paid Date: {{ p.paymentDate ? (p.paymentDate | date:'short') : '-' }}</div>
+
+      <div class="d-flex gap-2 align-items-center mt-2">
+        <span class="badge bg-secondary">{{ p.status }}</span>
+
+        <select class="form-select form-select-sm w-auto"
+          [ngModel]="p.status"
+          (ngModelChange)="updateStatus(p._id, $event)">
+          <option value="pending">Pending</option>
+          <option value="paid">Paid</option>
+          <option value="failed">Failed</option>
+          <option value="refunded">Refunded</option>
+        </select>
+
+        <button class="btn btn-outline-primary btn-sm"
+          *ngIf="p.status === 'paid'"
+          (click)="downloadReceipt(p._id)">
+          Receipt
+        </button>
+      </div>
+
+    </div>
+
+  </div>
+
+</div>

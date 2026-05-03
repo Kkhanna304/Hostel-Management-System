@@ -1,0 +1,39 @@
+<div class="container">
+  <h2 class="mb-4">Visitor Approvals</h2>
+
+  <div class="card p-3 mb-3 shadow-sm">
+    <div class="row">
+      <div class="col-md-4 mb-2">
+        <select class="form-select" [(ngModel)]="statusFilter">
+          <option value="all">All</option>
+          <option value="pending">Pending</option>
+          <option value="approved">Approved</option>
+          <option value="rejected">Rejected</option>
+        </select>
+      </div>
+      <div class="col-md-8 mb-2">
+        <input class="form-control" placeholder="Admin note" [(ngModel)]="adminNote">
+      </div>
+    </div>
+  </div>
+
+  <div class="card p-3 shadow-sm">
+    <div *ngIf="filteredVisitors().length === 0" class="text-muted">No visitor requests found</div>
+    <div *ngFor="let visitor of filteredVisitors()" class="border p-2 mb-2 rounded">
+      <div class="d-flex justify-content-between">
+        <strong>{{ visitor.visitorName }}</strong>
+        <span class="badge bg-secondary">{{ visitor.status }}</span>
+      </div>
+      <div>Student: {{ visitor.student?.name }}</div>
+      <div>Relation: {{ visitor.relation }}</div>
+      <div>Visit Date: {{ visitor.visitDate | date:'mediumDate' }}</div>
+      <div *ngIf="visitor.visitorId">Visitor ID: {{ visitor.visitorId }}</div>
+      <div *ngIf="visitor.idCardExpiresAt">ID Valid Until: {{ visitor.idCardExpiresAt | date:'medium' }}</div>
+      <div *ngIf="visitor.adminNote">Admin Note: {{ visitor.adminNote }}</div>
+      <div class="d-flex gap-2 mt-2" *ngIf="visitor.status === 'pending'">
+        <button class="btn btn-success btn-sm" (click)="updateVisitor(visitor._id, 'approved')">Approve</button>
+        <button class="btn btn-outline-danger btn-sm" (click)="updateVisitor(visitor._id, 'rejected')">Reject</button>
+      </div>
+    </div>
+  </div>
+</div>

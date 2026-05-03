@@ -1,0 +1,180 @@
+
+> frontend@0.0.0 start
+> ng serve --host 127.0.0.1 --port 4200
+
+[33m>[39m Building...
+[32m√[39m Building...
+[1mInitial chunk files[22m[2m | [22m[1mNames[22m           [2m | [22m [1mRaw size[22m
+[32mstyles.css[39m         [2m | [22m[2mstyles[22m          [2m | [22m[36m282.03 kB[39m[2m | [22m
+[32mmain.js[39m            [2m | [22m[2mmain[22m            [2m | [22m [36m15.81 kB[39m[2m | [22m
+
+[1m [22m                  [2m | [22m[1mInitial total[22m   [2m | [22m[1m297.84 kB[22m
+
+[1mLazy chunk files[22m   [2m | [22m[1mNames[22m           [2m | [22m [1mRaw size[22m
+[32mchunk-E3BFZMA2.js[39m  [2m | [22m[2mrooms[22m           [2m | [22m [36m34.39 kB[39m[2m | [22m
+[32mchunk-Y26GD7IO.js[39m  [2m | [22m[2mdashboard[22m       [2m | [22m [36m31.20 kB[39m[2m | [22m
+[32mchunk-BDKRIVCF.js[39m  [2m | [22m[2mlogin[22m           [2m | [22m [36m20.55 kB[39m[2m | [22m
+[32mchunk-LOXUIDL3.js[39m  [2m | [22m[2mpayments[22m        [2m | [22m [36m18.89 kB[39m[2m | [22m
+[32mchunk-LHU37HB6.js[39m  [2m | [22m[2mvisitors[22m        [2m | [22m [36m17.72 kB[39m[2m | [22m
+[32mchunk-N2SGZAM5.js[39m  [2m | [22m[2madmin-visitors[22m  [2m | [22m [36m13.63 kB[39m[2m | [22m
+[32mchunk-2XJD5PWS.js[39m  [2m | [22m[2madmin-complaints[22m[2m | [22m [36m12.23 kB[39m[2m | [22m
+[32mchunk-G2LNSFDC.js[39m  [2m | [22m[2madmin-leaves[22m    [2m | [22m [36m11.97 kB[39m[2m | [22m
+[32mchunk-KZW53FEQ.js[39m  [2m | [22m[2madmin-students[22m  [2m | [22m [36m11.06 kB[39m[2m | [22m
+[32mchunk-5ZDNB6GW.js[39m  [2m | [22m[2mhelp[22m            [2m | [22m [36m10.62 kB[39m[2m | [22m
+[32mchunk-PCYFJZTJ.js[39m  [2m | [22m[2mleaves[22m          [2m | [22m  [36m9.87 kB[39m[2m | [22m
+[32mchunk-2VI24GR5.js[39m  [2m | [22m[2mstudent-fees[22m    [2m | [22m  [36m9.34 kB[39m[2m | [22m
+[32mchunk-EOA4EEZX.js[39m  [2m | [22m[2mprofile[22m         [2m | [22m  [36m8.93 kB[39m[2m | [22m
+[32mchunk-BY7SFZRI.js[39m  [2m | [22m[2mcomplaints[22m      [2m | [22m  [36m8.71 kB[39m[2m | [22m
+[32mchunk-W2HI3VUU.js[39m  [2m | [22m[2mregister[22m        [2m | [22m  [36m7.58 kB[39m[2m | [22m
+[2m...and 1 more lazy chunks files. Use "--verbose" to show all the files.[22m
+
+Application bundle generation complete. [6.984 seconds] - 2026-05-03T07:45:35.377Z
+
+Watch mode enabled. Watching for file changes...
+NOTE: Raw file sizes do not reflect development server per-request transformations.
+  [32m➜[39m  [1mLocal[22m:   [36mhttp://127.0.0.1:[1m4200[22m/[39m
+[33m>[39m Changes detected. Rebuilding...
+[32m√[39m Changes detected. Rebuilding...
+[1mInitial chunk files[22m[2m | [22m[1mNames[22m   [2m | [22m[1mRaw size[22m
+[32mmain.js[39m            [2m | [22m[2mmain[22m    [2m | [22m[36m15.81 kB[39m[2m | [22m
+
+[1mLazy chunk files[22m   [2m | [22m[1mNames[22m   [2m | [22m[1mRaw size[22m
+[32mchunk-62EZCAIE.js[39m  [2m | [22m[2mvisitors[22m[2m | [22m[36m20.55 kB[39m[2m | [22m
+
+Application bundle generation complete. [3.228 seconds] - 2026-05-03T07:46:19.671Z
+
+Page reload sent to client(s).
+[33m>[39m Changes detected. Rebuilding...
+[32m√[39m Changes detected. Rebuilding...
+[1mInitial chunk files[22m[2m | [22m[1mNames[22m           [2m | [22m [1mRaw size[22m
+[32mmain.js[39m            [2m | [22m[2mmain[22m            [2m | [22m [36m15.81 kB[39m[2m | [22m
+
+[1mLazy chunk files[22m   [2m | [22m[1mNames[22m           [2m | [22m [1mRaw size[22m
+[32mchunk-XUR2S2J7.js[39m  [2m | [22m[2mlogin[22m           [2m | [22m [36m20.61 kB[39m[2m | [22m
+[32mchunk-56I2EVSH.js[39m  [2m | [22m[2madmin-visitors[22m  [2m | [22m [36m13.68 kB[39m[2m | [22m
+[32mchunk-M6KPN4BS.js[39m  [2m | [22m[2madmin-complaints[22m[2m | [22m [36m12.28 kB[39m[2m | [22m
+[32mchunk-JDDNYYML.js[39m  [2m | [22m[2madmin-leaves[22m    [2m | [22m [36m12.03 kB[39m[2m | [22m
+[32mchunk-N2OVV4QS.js[39m  [2m | [22m[2madmin-students[22m  [2m | [22m [36m11.12 kB[39m[2m | [22m
+[32mchunk-PK6MV2OW.js[39m  [2m | [22m[2mleaves[22m          [2m | [22m  [36m9.92 kB[39m[2m | [22m
+[32mchunk-O5YKTSWF.js[39m  [2m | [22m[2mstudent-fees[22m    [2m | [22m  [36m9.39 kB[39m[2m | [22m
+[32mchunk-BE5SYCB2.js[39m  [2m | [22m[2mprofile[22m         [2m | [22m  [36m8.98 kB[39m[2m | [22m
+[32mchunk-BPSBYXDR.js[39m  [2m | [22m[2mcomplaints[22m      [2m | [22m  [36m8.77 kB[39m[2m | [22m
+[32mchunk-NTNTXENO.js[39m  [2m | [22m[2mregister[22m        [2m | [22m  [36m7.64 kB[39m[2m | [22m
+[32mchunk-LJI3Z2GI.js[39m  [2m | [22m[2m-[22m               [2m | [22m[36m202 bytes[39m[2m | [22m
+
+Application bundle generation complete. [3.477 seconds] - 2026-05-03T14:48:04.801Z
+
+Page reload sent to client(s).
+[33m>[39m Changes detected. Rebuilding...
+[32m√[39m Changes detected. Rebuilding...
+[1mInitial chunk files[22m[2m | [22m[1mNames[22m    [2m | [22m[1mRaw size[22m
+[32mmain.js[39m            [2m | [22m[2mmain[22m     [2m | [22m[36m15.81 kB[39m[2m | [22m
+
+[1mLazy chunk files[22m   [2m | [22m[1mNames[22m    [2m | [22m[1mRaw size[22m
+[32mchunk-UZTS4RV6.js[39m  [2m | [22m[2mrooms[22m    [2m | [22m[36m34.44 kB[39m[2m | [22m
+[32mchunk-ZF7R6N2S.js[39m  [2m | [22m[2mdashboard[22m[2m | [22m[36m31.25 kB[39m[2m | [22m
+[32mchunk-YL5D33JB.js[39m  [2m | [22m[2mvisitors[22m [2m | [22m[36m20.60 kB[39m[2m | [22m
+[32mchunk-BLDTNWY7.js[39m  [2m | [22m[2mpayments[22m [2m | [22m[36m18.95 kB[39m[2m | [22m
+
+Application bundle generation complete. [1.160 seconds] - 2026-05-03T14:48:18.818Z
+
+Page reload sent to client(s).
+[33m>[39m Changes detected. Rebuilding...
+[32m√[39m Changes detected. Rebuilding...
+Application bundle generation failed. [6.518 seconds] - 2026-05-03T15:03:18.535Z
+
+[33m>[39m Changes detected. Rebuilding...
+[32m√[39m Changes detected. Rebuilding...
+[1mInitial chunk files[22m[2m | [22m[1mNames[22m           [2m | [22m [1mRaw size[22m
+[32mstyles.css[39m         [2m | [22m[2mstyles[22m          [2m | [22m[36m282.03 kB[39m[2m | [22m
+[32mmain.js[39m            [2m | [22m[2mmain[22m            [2m | [22m [36m15.81 kB[39m[2m | [22m
+
+[1m [22m                  [2m | [22m[1mInitial total[22m   [2m | [22m[1m297.84 kB[22m
+
+[1mLazy chunk files[22m   [2m | [22m[1mNames[22m           [2m | [22m [1mRaw size[22m
+[32mchunk-6TSS7ONU.js[39m  [2m | [22m[2mrooms[22m           [2m | [22m [36m34.44 kB[39m[2m | [22m
+[32mchunk-3ZMHAXIB.js[39m  [2m | [22m[2mdashboard[22m       [2m | [22m [36m31.25 kB[39m[2m | [22m
+[32mchunk-VILKAFQV.js[39m  [2m | [22m[2mlogin[22m           [2m | [22m [36m20.61 kB[39m[2m | [22m
+[32mchunk-BOLLB6S7.js[39m  [2m | [22m[2mvisitors[22m        [2m | [22m [36m20.60 kB[39m[2m | [22m
+[32mchunk-TRJEEQQG.js[39m  [2m | [22m[2mpayments[22m        [2m | [22m [36m18.95 kB[39m[2m | [22m
+[32mchunk-XLCZEMP6.js[39m  [2m | [22m[2madmin-visitors[22m  [2m | [22m [36m13.68 kB[39m[2m | [22m
+[32mchunk-WHDFXL7K.js[39m  [2m | [22m[2madmin-complaints[22m[2m | [22m [36m12.28 kB[39m[2m | [22m
+[32mchunk-2KC33NL2.js[39m  [2m | [22m[2madmin-leaves[22m    [2m | [22m [36m12.03 kB[39m[2m | [22m
+[32mchunk-LRDKH6FQ.js[39m  [2m | [22m[2madmin-students[22m  [2m | [22m [36m11.12 kB[39m[2m | [22m
+[32mchunk-5ZDNB6GW.js[39m  [2m | [22m[2mhelp[22m            [2m | [22m [36m10.62 kB[39m[2m | [22m
+[32mchunk-QO34KCV7.js[39m  [2m | [22m[2mleaves[22m          [2m | [22m  [36m9.92 kB[39m[2m | [22m
+[32mchunk-LJY2UFPH.js[39m  [2m | [22m[2mstudent-fees[22m    [2m | [22m  [36m9.39 kB[39m[2m | [22m
+[32mchunk-33IX355J.js[39m  [2m | [22m[2mprofile[22m         [2m | [22m  [36m8.98 kB[39m[2m | [22m
+[32mchunk-7VFZGR2U.js[39m  [2m | [22m[2mcomplaints[22m      [2m | [22m  [36m8.77 kB[39m[2m | [22m
+[32mchunk-GCSUOH3D.js[39m  [2m | [22m[2mregister[22m        [2m | [22m  [36m7.64 kB[39m[2m | [22m
+[2m...and 2 more lazy chunks files. Use "--verbose" to show all the files.[22m
+
+Application bundle generation complete. [2.103 seconds] - 2026-05-03T15:03:20.852Z
+
+Page reload sent to client(s).
+[33m>[39m Changes detected. Rebuilding...
+[32m√[39m Changes detected. Rebuilding...
+Application bundle generation failed. [0.618 seconds] - 2026-05-03T15:03:25.526Z
+
+[33m>[39m Changes detected. Rebuilding...
+[32m√[39m Changes detected. Rebuilding...
+[1mInitial chunk files[22m[2m | [22m[1mNames[22m           [2m | [22m [1mRaw size[22m
+[32mstyles.css[39m         [2m | [22m[2mstyles[22m          [2m | [22m[36m282.03 kB[39m[2m | [22m
+[32mmain.js[39m            [2m | [22m[2mmain[22m            [2m | [22m [36m15.81 kB[39m[2m | [22m
+
+[1m [22m                  [2m | [22m[1mInitial total[22m   [2m | [22m[1m297.84 kB[22m
+
+[1mLazy chunk files[22m   [2m | [22m[1mNames[22m           [2m | [22m [1mRaw size[22m
+[32mchunk-5LXAETIA.js[39m  [2m | [22m[2mrooms[22m           [2m | [22m [36m34.44 kB[39m[2m | [22m
+[32mchunk-G6Y3JQ47.js[39m  [2m | [22m[2mdashboard[22m       [2m | [22m [36m31.25 kB[39m[2m | [22m
+[32mchunk-TPMOOVKN.js[39m  [2m | [22m[2mlogin[22m           [2m | [22m [36m20.61 kB[39m[2m | [22m
+[32mchunk-EYZ5HEZL.js[39m  [2m | [22m[2mvisitors[22m        [2m | [22m [36m20.60 kB[39m[2m | [22m
+[32mchunk-7PIFKBGP.js[39m  [2m | [22m[2mpayments[22m        [2m | [22m [36m18.95 kB[39m[2m | [22m
+[32mchunk-JDACEASP.js[39m  [2m | [22m[2madmin-visitors[22m  [2m | [22m [36m13.68 kB[39m[2m | [22m
+[32mchunk-S344QDZT.js[39m  [2m | [22m[2madmin-complaints[22m[2m | [22m [36m12.28 kB[39m[2m | [22m
+[32mchunk-WJJQ654P.js[39m  [2m | [22m[2madmin-leaves[22m    [2m | [22m [36m12.03 kB[39m[2m | [22m
+[32mchunk-HTFRJHWN.js[39m  [2m | [22m[2madmin-students[22m  [2m | [22m [36m11.12 kB[39m[2m | [22m
+[32mchunk-5ZDNB6GW.js[39m  [2m | [22m[2mhelp[22m            [2m | [22m [36m10.62 kB[39m[2m | [22m
+[32mchunk-U476YFNT.js[39m  [2m | [22m[2mleaves[22m          [2m | [22m  [36m9.92 kB[39m[2m | [22m
+[32mchunk-JDWP4S4K.js[39m  [2m | [22m[2mstudent-fees[22m    [2m | [22m  [36m9.39 kB[39m[2m | [22m
+[32mchunk-Z6PR6YTB.js[39m  [2m | [22m[2mprofile[22m         [2m | [22m  [36m8.98 kB[39m[2m | [22m
+[32mchunk-CMR6BYBC.js[39m  [2m | [22m[2mcomplaints[22m      [2m | [22m  [36m8.77 kB[39m[2m | [22m
+[32mchunk-D2XUYD4C.js[39m  [2m | [22m[2mregister[22m        [2m | [22m  [36m7.64 kB[39m[2m | [22m
+[2m...and 2 more lazy chunks files. Use "--verbose" to show all the files.[22m
+
+Application bundle generation complete. [0.584 seconds] - 2026-05-03T15:03:28.789Z
+
+Page reload sent to client(s).
+[33m>[39m Changes detected. Rebuilding...
+[32m√[39m Changes detected. Rebuilding...
+Application bundle generation failed. [1.312 seconds] - 2026-05-03T15:07:49.228Z
+
+[33m>[39m Changes detected. Rebuilding...
+[32m√[39m Changes detected. Rebuilding...
+[1mInitial chunk files[22m[2m | [22m[1mNames[22m           [2m | [22m [1mRaw size[22m
+[32mstyles.css[39m         [2m | [22m[2mstyles[22m          [2m | [22m[36m282.03 kB[39m[2m | [22m
+[32mmain.js[39m            [2m | [22m[2mmain[22m            [2m | [22m [36m15.81 kB[39m[2m | [22m
+
+[1m [22m                  [2m | [22m[1mInitial total[22m   [2m | [22m[1m297.84 kB[22m
+
+[1mLazy chunk files[22m   [2m | [22m[1mNames[22m           [2m | [22m [1mRaw size[22m
+[32mchunk-BPQCMWH4.js[39m  [2m | [22m[2mrooms[22m           [2m | [22m [36m34.44 kB[39m[2m | [22m
+[32mchunk-3IJSHBNG.js[39m  [2m | [22m[2mdashboard[22m       [2m | [22m [36m31.25 kB[39m[2m | [22m
+[32mchunk-WFNUZPNV.js[39m  [2m | [22m[2mlogin[22m           [2m | [22m [36m20.61 kB[39m[2m | [22m
+[32mchunk-WT4SWXGD.js[39m  [2m | [22m[2mvisitors[22m        [2m | [22m [36m20.60 kB[39m[2m | [22m
+[32mchunk-NPUABQSA.js[39m  [2m | [22m[2mpayments[22m        [2m | [22m [36m18.95 kB[39m[2m | [22m
+[32mchunk-G2O4N3UX.js[39m  [2m | [22m[2madmin-visitors[22m  [2m | [22m [36m13.68 kB[39m[2m | [22m
+[32mchunk-LWPTVCAK.js[39m  [2m | [22m[2madmin-complaints[22m[2m | [22m [36m12.28 kB[39m[2m | [22m
+[32mchunk-ABTQWEBO.js[39m  [2m | [22m[2madmin-leaves[22m    [2m | [22m [36m12.03 kB[39m[2m | [22m
+[32mchunk-OESEFMT7.js[39m  [2m | [22m[2madmin-students[22m  [2m | [22m [36m11.12 kB[39m[2m | [22m
+[32mchunk-5ZDNB6GW.js[39m  [2m | [22m[2mhelp[22m            [2m | [22m [36m10.62 kB[39m[2m | [22m
+[32mchunk-VOSBTYXO.js[39m  [2m | [22m[2mleaves[22m          [2m | [22m  [36m9.92 kB[39m[2m | [22m
+[32mchunk-HMPSVZHB.js[39m  [2m | [22m[2mstudent-fees[22m    [2m | [22m  [36m9.39 kB[39m[2m | [22m
+[32mchunk-E2W3UJJK.js[39m  [2m | [22m[2mprofile[22m         [2m | [22m  [36m8.98 kB[39m[2m | [22m
+[32mchunk-4GB4JIZW.js[39m  [2m | [22m[2mcomplaints[22m      [2m | [22m  [36m8.77 kB[39m[2m | [22m
+[32mchunk-OZBTCFCC.js[39m  [2m | [22m[2mregister[22m        [2m | [22m  [36m7.64 kB[39m[2m | [22m
+[2m...and 2 more lazy chunks files. Use "--verbose" to show all the files.[22m
+
+Application bundle generation complete. [0.278 seconds] - 2026-05-03T15:07:50.583Z
+
+Page reload sent to client(s).

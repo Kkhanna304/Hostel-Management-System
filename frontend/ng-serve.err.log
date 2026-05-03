@@ -1,0 +1,651 @@
+[1m[31m[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS2339: Property 'apiUrl' does not exist on type '{ production: boolean; a: any; }'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/pages/admin-complaints/admin-complaints.ts:35:40:
+[37m      35 │ ...tp.get<any[]>(`${environment.[32mapiUrl[37m}/api/complaints`, { headers...
+         ╵                                 [32m~~~~~~[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS2339: Property 'apiUrl' does not exist on type '{ production: boolean; a: any; }'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/pages/admin-complaints/admin-complaints.ts:54:33:
+[37m      54 │ ...this.http.put(`${environment.[32mapiUrl[37m}/api/complaints/${complaint...
+         ╵                                 [32m~~~~~~[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS2339: Property 'apiUrl' does not exist on type '{ production: boolean; a: any; }'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/pages/admin-leaves/admin-leaves.ts:35:40:
+[37m      35 │ ...tp.get<any[]>(`${environment.[32mapiUrl[37m}/api/leaves`, { headers: th...
+         ╵                                 [32m~~~~~~[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS2339: Property 'apiUrl' does not exist on type '{ production: boolean; a: any; }'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/pages/admin-leaves/admin-leaves.ts:54:33:
+[37m      54 │     this.http.put(`${environment.[32mapiUrl[37m}/api/leaves/${leaveId}`, {
+         ╵                                  [32m~~~~~~[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS2339: Property 'apiUrl' does not exist on type '{ production: boolean; a: any; }'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/pages/admin-students/admin-students.ts:36:40:
+[37m      36 │ ...tp.get<any[]>(`${environment.[32mapiUrl[37m}/api/students`, { headers: ...
+         ╵                                 [32m~~~~~~[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS2339: Property 'apiUrl' does not exist on type '{ production: boolean; a: any; }'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/pages/admin-students/admin-students.ts:47:40:
+[37m      47 │ ...tp.get<any[]>(`${environment.[32mapiUrl[37m}/api/rooms`, { headers: thi...
+         ╵                                 [32m~~~~~~[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS2339: Property 'apiUrl' does not exist on type '{ production: boolean; a: any; }'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/pages/admin-students/admin-students.ts:80:36:
+[37m      80 │ ...s.http.delete(`${environment.[32mapiUrl[37m}/api/students/${studentId}`, {
+         ╵                                 [32m~~~~~~[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS2339: Property 'apiUrl' does not exist on type '{ production: boolean; a: any; }'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/pages/admin-visitors/admin-visitors.ts:35:40:
+[37m      35 │ ...tp.get<any[]>(`${environment.[32mapiUrl[37m}/api/visitors`, { headers: ...
+         ╵                                 [32m~~~~~~[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS2339: Property 'apiUrl' does not exist on type '{ production: boolean; a: any; }'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/pages/admin-visitors/admin-visitors.ts:54:33:
+[37m      54 │ ...this.http.put(`${environment.[32mapiUrl[37m}/api/visitors/${visitorId}`, {
+         ╵                                 [32m~~~~~~[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS2339: Property 'apiUrl' does not exist on type '{ production: boolean; a: any; }'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/pages/complaints/complaints.ts:30:40:
+[37m      30 │     this.http.get<any[]>(`${environment.[32mapiUrl[37m}/api/complaints/my`, {
+         ╵                                         [32m~~~~~~[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS2339: Property 'apiUrl' does not exist on type '{ production: boolean; a: any; }'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/pages/complaints/complaints.ts:42:34:
+[37m      42 │     this.http.post(`${environment.[32mapiUrl[37m}/api/complaints`, {
+         ╵                                   [32m~~~~~~[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS2339: Property 'apiUrl' does not exist on type '{ production: boolean; a: any; }'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/pages/dashboard/dashboard.ts:47:35:
+[37m      47 │       this.http.get(`${environment.[32mapiUrl[37m}/api/dashboard`, {
+         ╵                                    [32m~~~~~~[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS2339: Property 'apiUrl' does not exist on type '{ production: boolean; a: any; }'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/pages/dashboard/dashboard.ts:69:38:
+[37m      69 │ ...this.http.get<any>(`${environment.[32mapiUrl[37m}/api/students/profile`, {
+         ╵                                      [32m~~~~~~[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS2339: Property 'apiUrl' does not exist on type '{ production: boolean; a: any; }'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/pages/dashboard/dashboard.ts:80:40:
+[37m      80 │     this.http.get<any[]>(`${environment.[32mapiUrl[37m}/api/payments/my`, {
+         ╵                                         [32m~~~~~~[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS2339: Property 'apiUrl' does not exist on type '{ production: boolean; a: any; }'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/pages/dashboard/dashboard.ts:91:40:
+[37m      91 │     this.http.get<any[]>(`${environment.[32mapiUrl[37m}/api/leaves/my`, {
+         ╵                                         [32m~~~~~~[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS2339: Property 'apiUrl' does not exist on type '{ production: boolean; a: any; }'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/pages/dashboard/dashboard.ts:102:40:
+[37m      102 │ ...this.http.get<any[]>(`${environment.[32mapiUrl[37m}/api/complaints/my`, {
+          ╵                                        [32m~~~~~~[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS2339: Property 'apiUrl' does not exist on type '{ production: boolean; a: any; }'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/pages/dashboard/dashboard.ts:113:40:
+[37m      113 │     this.http.get<any[]>(`${environment.[32mapiUrl[37m}/api/visitors/my`, {
+          ╵                                         [32m~~~~~~[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS2339: Property 'apiUrl' does not exist on type '{ production: boolean; a: any; }'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/pages/dashboard/dashboard.ts:126:40:
+[37m      126 │     this.http.get<any[]>(`${environment.[32mapiUrl[37m}/api/rooms`, {
+          ╵                                         [32m~~~~~~[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS2339: Property 'apiUrl' does not exist on type '{ production: boolean; a: any; }'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/pages/dashboard/dashboard.ts:207:33:
+[37m      207 │ ...his.http.get(`${environment.[32mapiUrl[37m}/api/payments/${paymentId}/...
+          ╵                                [32m~~~~~~[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS2339: Property 'apiUrl' does not exist on type '{ production: boolean; a: any; }'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/pages/leaves/leaves.ts:32:40:
+[37m      32 │     this.http.get<any[]>(`${environment.[32mapiUrl[37m}/api/leaves/my`, {
+         ╵                                         [32m~~~~~~[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS2339: Property 'apiUrl' does not exist on type '{ production: boolean; a: any; }'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/pages/leaves/leaves.ts:44:34:
+[37m      44 │     this.http.post(`${environment.[32mapiUrl[37m}/api/leaves`, {
+         ╵                                   [32m~~~~~~[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS2339: Property 'apiUrl' does not exist on type '{ production: boolean; a: any; }'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/pages/login/login.ts:22:39:
+[37m      22 │     this.http.post<any>(`${environment.[32mapiUrl[37m}/api/auth/login`, {
+         ╵                                        [32m~~~~~~[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS2339: Property 'apiUrl' does not exist on type '{ production: boolean; a: any; }'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/pages/payments/payments.ts:44:40:
+[37m      44 │     this.http.get<any[]>(`${environment.[32mapiUrl[37m}/api/payments`, {
+         ╵                                         [32m~~~~~~[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS2339: Property 'apiUrl' does not exist on type '{ production: boolean; a: any; }'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/pages/payments/payments.ts:60:40:
+[37m      60 │     this.http.get<any[]>(`${environment.[32mapiUrl[37m}/api/students`, {
+         ╵                                         [32m~~~~~~[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS2339: Property 'apiUrl' does not exist on type '{ production: boolean; a: any; }'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/pages/payments/payments.ts:84:34:
+[37m      84 │     this.http.post(`${environment.[32mapiUrl[37m}/api/payments`, {
+         ╵                                   [32m~~~~~~[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS2339: Property 'apiUrl' does not exist on type '{ production: boolean; a: any; }'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/pages/payments/payments.ts:104:33:
+[37m      104 │ ...his.http.put(`${environment.[32mapiUrl[37m}/api/payments/${paymentId}/...
+          ╵                                [32m~~~~~~[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS2339: Property 'apiUrl' does not exist on type '{ production: boolean; a: any; }'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/pages/payments/payments.ts:126:33:
+[37m      126 │ ...his.http.get(`${environment.[32mapiUrl[37m}/api/payments/${paymentId}/...
+          ╵                                [32m~~~~~~[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS2339: Property 'apiUrl' does not exist on type '{ production: boolean; a: any; }'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/pages/profile/profile.ts:31:38:
+[37m      31 │ ...this.http.get<any>(`${environment.[32mapiUrl[37m}/api/students/profile`, {
+         ╵                                      [32m~~~~~~[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS2339: Property 'apiUrl' does not exist on type '{ production: boolean; a: any; }'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/pages/profile/profile.ts:48:38:
+[37m      48 │ ...this.http.put<any>(`${environment.[32mapiUrl[37m}/api/students/profile`, {
+         ╵                                      [32m~~~~~~[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS2339: Property 'apiUrl' does not exist on type '{ production: boolean; a: any; }'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/pages/register/register.ts:27:34:
+[37m      27 │     this.http.post(`${environment.[32mapiUrl[37m}/api/auth/register`, {
+         ╵                                   [32m~~~~~~[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS2339: Property 'apiUrl' does not exist on type '{ production: boolean; a: any; }'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/pages/rooms/rooms.ts:59:40:
+[37m      59 │     this.http.get<any[]>(`${environment.[32mapiUrl[37m}/api/rooms`, {
+         ╵                                         [32m~~~~~~[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS2339: Property 'apiUrl' does not exist on type '{ production: boolean; a: any; }'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/pages/rooms/rooms.ts:74:40:
+[37m      74 │     this.http.get<any[]>(`${environment.[32mapiUrl[37m}/api/students`, {
+         ╵                                         [32m~~~~~~[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS2339: Property 'apiUrl' does not exist on type '{ production: boolean; a: any; }'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/pages/rooms/rooms.ts:89:40:
+[37m      89 │ ...this.http.get<any[]>(`${environment.[32mapiUrl[37m}/api/rooms/requests`, {
+         ╵                                        [32m~~~~~~[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS2339: Property 'apiUrl' does not exist on type '{ production: boolean; a: any; }'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/pages/rooms/rooms.ts:104:40:
+[37m      104 │ ....http.get<any[]>(`${environment.[32mapiUrl[37m}/api/rooms/requests/my`, {
+          ╵                                    [32m~~~~~~[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS2339: Property 'apiUrl' does not exist on type '{ production: boolean; a: any; }'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/pages/rooms/rooms.ts:123:34:
+[37m      123 │     this.http.post(`${environment.[32mapiUrl[37m}/api/rooms`, {
+          ╵                                   [32m~~~~~~[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS2339: Property 'apiUrl' does not exist on type '{ production: boolean; a: any; }'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/pages/rooms/rooms.ts:148:34:
+[37m      148 │     this.http.post(`${environment.[32mapiUrl[37m}/api/rooms/assign`, {
+          ╵                                   [32m~~~~~~[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS2339: Property 'apiUrl' does not exist on type '{ production: boolean; a: any; }'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/pages/rooms/rooms.ts:167:34:
+[37m      167 │     this.http.post(`${environment.[32mapiUrl[37m}/api/rooms/requests`, {
+          ╵                                   [32m~~~~~~[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS2339: Property 'apiUrl' does not exist on type '{ production: boolean; a: any; }'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/pages/rooms/rooms.ts:186:33:
+[37m      186 │ ...his.http.put(`${environment.[32mapiUrl[37m}/api/rooms/requests/${reque...
+          ╵                                [32m~~~~~~[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS2339: Property 'apiUrl' does not exist on type '{ production: boolean; a: any; }'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/pages/rooms/rooms.ts:206:34:
+[37m      206 │     this.http.post(`${environment.[32mapiUrl[37m}/api/rooms/remove`, {
+          ╵                                   [32m~~~~~~[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS2339: Property 'apiUrl' does not exist on type '{ production: boolean; a: any; }'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/pages/rooms/rooms.ts:230:36:
+[37m      230 │     this.http.delete(`${environment.[32mapiUrl[37m}/api/rooms/${roomId}`, {
+          ╵                                     [32m~~~~~~[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS2339: Property 'apiUrl' does not exist on type '{ production: boolean; a: any; }'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/pages/student-fees/student-fees.ts:28:40:
+[37m      28 │     this.http.get<any[]>(`${environment.[32mapiUrl[37m}/api/payments/my`, {
+         ╵                                         [32m~~~~~~[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS2339: Property 'apiUrl' does not exist on type '{ production: boolean; a: any; }'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/pages/student-fees/student-fees.ts:52:33:
+[37m      52 │ ...this.http.get(`${environment.[32mapiUrl[37m}/api/payments/${paymentId}/...
+         ╵                                 [32m~~~~~~[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS2339: Property 'apiUrl' does not exist on type '{ production: boolean; a: any; }'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/pages/visitors/visitors.ts:32:40:
+[37m      32 │     this.http.get<any[]>(`${environment.[32mapiUrl[37m}/api/visitors/my`, {
+         ╵                                         [32m~~~~~~[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS2339: Property 'apiUrl' does not exist on type '{ production: boolean; a: any; }'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/pages/visitors/visitors.ts:44:34:
+[37m      44 │     this.http.post(`${environment.[32mapiUrl[37m}/api/visitors`, {
+         ╵                                   [32m~~~~~~[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS2339: Property 'apiUrl' does not exist on type '{ production: boolean; a: any; }'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/pages/visitors/visitors.ts:72:33:
+[37m      72 │ ...this.http.get(`${environment.[32mapiUrl[37m}/api/visitors/${visitor._id...
+         ╵                                 [32m~~~~~~[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS18004: No value exists in scope for the shorthand property 'a'. Either declare one or provide an initializer.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/environments/environment.ts:4:2:
+[37m      4 │   [32ma[37m
+        ╵   [32m^[0m
+
+[39m[22m
+[1m[31m[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS2304: Cannot find name 'http'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/environments/environment.ts:4:10:
+[37m      4 │   apiUrl: [32mhttp[37m://localhost:5000'
+        ╵           [32m~~~~[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS1005: ',' expected.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/environments/environment.ts:4:14:
+[37m      4 │   apiUrl: http[32m:[37m//localhost:5000'
+        ╵               [32m^[0m
+
+[39m[22m
+[1m[31m[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS2339: Property 'apiUrl' does not exist on type '{ production: boolean; }'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/pages/admin-complaints/admin-complaints.ts:35:40:
+[37m      35 │ ...tp.get<any[]>(`${environment.[32mapiUrl[37m}/api/complaints`, { headers...
+         ╵                                 [32m~~~~~~[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS2339: Property 'apiUrl' does not exist on type '{ production: boolean; }'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/pages/admin-complaints/admin-complaints.ts:54:33:
+[37m      54 │ ...this.http.put(`${environment.[32mapiUrl[37m}/api/complaints/${complaint...
+         ╵                                 [32m~~~~~~[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS2339: Property 'apiUrl' does not exist on type '{ production: boolean; }'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/pages/admin-leaves/admin-leaves.ts:35:40:
+[37m      35 │ ...tp.get<any[]>(`${environment.[32mapiUrl[37m}/api/leaves`, { headers: th...
+         ╵                                 [32m~~~~~~[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS2339: Property 'apiUrl' does not exist on type '{ production: boolean; }'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/pages/admin-leaves/admin-leaves.ts:54:33:
+[37m      54 │     this.http.put(`${environment.[32mapiUrl[37m}/api/leaves/${leaveId}`, {
+         ╵                                  [32m~~~~~~[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS2339: Property 'apiUrl' does not exist on type '{ production: boolean; }'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/pages/admin-students/admin-students.ts:36:40:
+[37m      36 │ ...tp.get<any[]>(`${environment.[32mapiUrl[37m}/api/students`, { headers: ...
+         ╵                                 [32m~~~~~~[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS2339: Property 'apiUrl' does not exist on type '{ production: boolean; }'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/pages/admin-students/admin-students.ts:47:40:
+[37m      47 │ ...tp.get<any[]>(`${environment.[32mapiUrl[37m}/api/rooms`, { headers: thi...
+         ╵                                 [32m~~~~~~[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS2339: Property 'apiUrl' does not exist on type '{ production: boolean; }'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/pages/admin-students/admin-students.ts:80:36:
+[37m      80 │ ...s.http.delete(`${environment.[32mapiUrl[37m}/api/students/${studentId}`, {
+         ╵                                 [32m~~~~~~[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS2339: Property 'apiUrl' does not exist on type '{ production: boolean; }'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/pages/admin-visitors/admin-visitors.ts:35:40:
+[37m      35 │ ...tp.get<any[]>(`${environment.[32mapiUrl[37m}/api/visitors`, { headers: ...
+         ╵                                 [32m~~~~~~[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS2339: Property 'apiUrl' does not exist on type '{ production: boolean; }'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/pages/admin-visitors/admin-visitors.ts:54:33:
+[37m      54 │ ...this.http.put(`${environment.[32mapiUrl[37m}/api/visitors/${visitorId}`, {
+         ╵                                 [32m~~~~~~[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS2339: Property 'apiUrl' does not exist on type '{ production: boolean; }'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/pages/complaints/complaints.ts:30:40:
+[37m      30 │     this.http.get<any[]>(`${environment.[32mapiUrl[37m}/api/complaints/my`, {
+         ╵                                         [32m~~~~~~[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS2339: Property 'apiUrl' does not exist on type '{ production: boolean; }'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/pages/complaints/complaints.ts:42:34:
+[37m      42 │     this.http.post(`${environment.[32mapiUrl[37m}/api/complaints`, {
+         ╵                                   [32m~~~~~~[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS2339: Property 'apiUrl' does not exist on type '{ production: boolean; }'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/pages/dashboard/dashboard.ts:47:35:
+[37m      47 │       this.http.get(`${environment.[32mapiUrl[37m}/api/dashboard`, {
+         ╵                                    [32m~~~~~~[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS2339: Property 'apiUrl' does not exist on type '{ production: boolean; }'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/pages/dashboard/dashboard.ts:69:38:
+[37m      69 │ ...this.http.get<any>(`${environment.[32mapiUrl[37m}/api/students/profile`, {
+         ╵                                      [32m~~~~~~[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS2339: Property 'apiUrl' does not exist on type '{ production: boolean; }'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/pages/dashboard/dashboard.ts:80:40:
+[37m      80 │     this.http.get<any[]>(`${environment.[32mapiUrl[37m}/api/payments/my`, {
+         ╵                                         [32m~~~~~~[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS2339: Property 'apiUrl' does not exist on type '{ production: boolean; }'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/pages/dashboard/dashboard.ts:91:40:
+[37m      91 │     this.http.get<any[]>(`${environment.[32mapiUrl[37m}/api/leaves/my`, {
+         ╵                                         [32m~~~~~~[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS2339: Property 'apiUrl' does not exist on type '{ production: boolean; }'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/pages/dashboard/dashboard.ts:102:40:
+[37m      102 │ ...this.http.get<any[]>(`${environment.[32mapiUrl[37m}/api/complaints/my`, {
+          ╵                                        [32m~~~~~~[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS2339: Property 'apiUrl' does not exist on type '{ production: boolean; }'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/pages/dashboard/dashboard.ts:113:40:
+[37m      113 │     this.http.get<any[]>(`${environment.[32mapiUrl[37m}/api/visitors/my`, {
+          ╵                                         [32m~~~~~~[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS2339: Property 'apiUrl' does not exist on type '{ production: boolean; }'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/pages/dashboard/dashboard.ts:126:40:
+[37m      126 │     this.http.get<any[]>(`${environment.[32mapiUrl[37m}/api/rooms`, {
+          ╵                                         [32m~~~~~~[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS2339: Property 'apiUrl' does not exist on type '{ production: boolean; }'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/pages/dashboard/dashboard.ts:207:33:
+[37m      207 │ ...his.http.get(`${environment.[32mapiUrl[37m}/api/payments/${paymentId}/...
+          ╵                                [32m~~~~~~[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS2339: Property 'apiUrl' does not exist on type '{ production: boolean; }'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/pages/leaves/leaves.ts:32:40:
+[37m      32 │     this.http.get<any[]>(`${environment.[32mapiUrl[37m}/api/leaves/my`, {
+         ╵                                         [32m~~~~~~[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS2339: Property 'apiUrl' does not exist on type '{ production: boolean; }'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/pages/leaves/leaves.ts:44:34:
+[37m      44 │     this.http.post(`${environment.[32mapiUrl[37m}/api/leaves`, {
+         ╵                                   [32m~~~~~~[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS2339: Property 'apiUrl' does not exist on type '{ production: boolean; }'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/pages/login/login.ts:22:39:
+[37m      22 │     this.http.post<any>(`${environment.[32mapiUrl[37m}/api/auth/login`, {
+         ╵                                        [32m~~~~~~[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS2339: Property 'apiUrl' does not exist on type '{ production: boolean; }'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/pages/payments/payments.ts:44:40:
+[37m      44 │     this.http.get<any[]>(`${environment.[32mapiUrl[37m}/api/payments`, {
+         ╵                                         [32m~~~~~~[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS2339: Property 'apiUrl' does not exist on type '{ production: boolean; }'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/pages/payments/payments.ts:60:40:
+[37m      60 │     this.http.get<any[]>(`${environment.[32mapiUrl[37m}/api/students`, {
+         ╵                                         [32m~~~~~~[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS2339: Property 'apiUrl' does not exist on type '{ production: boolean; }'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/pages/payments/payments.ts:84:34:
+[37m      84 │     this.http.post(`${environment.[32mapiUrl[37m}/api/payments`, {
+         ╵                                   [32m~~~~~~[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS2339: Property 'apiUrl' does not exist on type '{ production: boolean; }'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/pages/payments/payments.ts:104:33:
+[37m      104 │ ...his.http.put(`${environment.[32mapiUrl[37m}/api/payments/${paymentId}/...
+          ╵                                [32m~~~~~~[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS2339: Property 'apiUrl' does not exist on type '{ production: boolean; }'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/pages/payments/payments.ts:126:33:
+[37m      126 │ ...his.http.get(`${environment.[32mapiUrl[37m}/api/payments/${paymentId}/...
+          ╵                                [32m~~~~~~[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS2339: Property 'apiUrl' does not exist on type '{ production: boolean; }'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/pages/profile/profile.ts:31:38:
+[37m      31 │ ...this.http.get<any>(`${environment.[32mapiUrl[37m}/api/students/profile`, {
+         ╵                                      [32m~~~~~~[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS2339: Property 'apiUrl' does not exist on type '{ production: boolean; }'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/pages/profile/profile.ts:48:38:
+[37m      48 │ ...this.http.put<any>(`${environment.[32mapiUrl[37m}/api/students/profile`, {
+         ╵                                      [32m~~~~~~[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS2339: Property 'apiUrl' does not exist on type '{ production: boolean; }'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/pages/register/register.ts:27:34:
+[37m      27 │     this.http.post(`${environment.[32mapiUrl[37m}/api/auth/register`, {
+         ╵                                   [32m~~~~~~[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS2339: Property 'apiUrl' does not exist on type '{ production: boolean; }'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/pages/rooms/rooms.ts:59:40:
+[37m      59 │     this.http.get<any[]>(`${environment.[32mapiUrl[37m}/api/rooms`, {
+         ╵                                         [32m~~~~~~[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS2339: Property 'apiUrl' does not exist on type '{ production: boolean; }'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/pages/rooms/rooms.ts:74:40:
+[37m      74 │     this.http.get<any[]>(`${environment.[32mapiUrl[37m}/api/students`, {
+         ╵                                         [32m~~~~~~[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS2339: Property 'apiUrl' does not exist on type '{ production: boolean; }'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/pages/rooms/rooms.ts:89:40:
+[37m      89 │ ...this.http.get<any[]>(`${environment.[32mapiUrl[37m}/api/rooms/requests`, {
+         ╵                                        [32m~~~~~~[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS2339: Property 'apiUrl' does not exist on type '{ production: boolean; }'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/pages/rooms/rooms.ts:104:40:
+[37m      104 │ ....http.get<any[]>(`${environment.[32mapiUrl[37m}/api/rooms/requests/my`, {
+          ╵                                    [32m~~~~~~[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS2339: Property 'apiUrl' does not exist on type '{ production: boolean; }'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/pages/rooms/rooms.ts:123:34:
+[37m      123 │     this.http.post(`${environment.[32mapiUrl[37m}/api/rooms`, {
+          ╵                                   [32m~~~~~~[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS2339: Property 'apiUrl' does not exist on type '{ production: boolean; }'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/pages/rooms/rooms.ts:148:34:
+[37m      148 │     this.http.post(`${environment.[32mapiUrl[37m}/api/rooms/assign`, {
+          ╵                                   [32m~~~~~~[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS2339: Property 'apiUrl' does not exist on type '{ production: boolean; }'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/pages/rooms/rooms.ts:167:34:
+[37m      167 │     this.http.post(`${environment.[32mapiUrl[37m}/api/rooms/requests`, {
+          ╵                                   [32m~~~~~~[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS2339: Property 'apiUrl' does not exist on type '{ production: boolean; }'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/pages/rooms/rooms.ts:186:33:
+[37m      186 │ ...his.http.put(`${environment.[32mapiUrl[37m}/api/rooms/requests/${reque...
+          ╵                                [32m~~~~~~[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS2339: Property 'apiUrl' does not exist on type '{ production: boolean; }'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/pages/rooms/rooms.ts:206:34:
+[37m      206 │     this.http.post(`${environment.[32mapiUrl[37m}/api/rooms/remove`, {
+          ╵                                   [32m~~~~~~[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS2339: Property 'apiUrl' does not exist on type '{ production: boolean; }'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/pages/rooms/rooms.ts:230:36:
+[37m      230 │     this.http.delete(`${environment.[32mapiUrl[37m}/api/rooms/${roomId}`, {
+          ╵                                     [32m~~~~~~[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS2339: Property 'apiUrl' does not exist on type '{ production: boolean; }'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/pages/student-fees/student-fees.ts:28:40:
+[37m      28 │     this.http.get<any[]>(`${environment.[32mapiUrl[37m}/api/payments/my`, {
+         ╵                                         [32m~~~~~~[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS2339: Property 'apiUrl' does not exist on type '{ production: boolean; }'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/pages/student-fees/student-fees.ts:52:33:
+[37m      52 │ ...this.http.get(`${environment.[32mapiUrl[37m}/api/payments/${paymentId}/...
+         ╵                                 [32m~~~~~~[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS2339: Property 'apiUrl' does not exist on type '{ production: boolean; }'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/pages/visitors/visitors.ts:32:40:
+[37m      32 │     this.http.get<any[]>(`${environment.[32mapiUrl[37m}/api/visitors/my`, {
+         ╵                                         [32m~~~~~~[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS2339: Property 'apiUrl' does not exist on type '{ production: boolean; }'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/pages/visitors/visitors.ts:44:34:
+[37m      44 │     this.http.post(`${environment.[32mapiUrl[37m}/api/visitors`, {
+         ╵                                   [32m~~~~~~[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS2339: Property 'apiUrl' does not exist on type '{ production: boolean; }'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/pages/visitors/visitors.ts:72:33:
+[37m      72 │ ...this.http.get(`${environment.[32mapiUrl[37m}/api/visitors/${visitor._id...
+         ╵                                 [32m~~~~~~[0m
+
+[39m[22m

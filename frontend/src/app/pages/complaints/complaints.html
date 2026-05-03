@@ -1,0 +1,25 @@
+<div class="container">
+  <h2 class="mb-4">Complaints</h2>
+
+  <div class="card p-3 mb-4 shadow-sm">
+    <h5>Submit Complaint</h5>
+    <textarea class="form-control mb-2" rows="4" placeholder="Describe your issue" [(ngModel)]="message"></textarea>
+    <button class="btn btn-primary" [disabled]="!message" (click)="submitComplaint()">
+      Submit Complaint
+    </button>
+  </div>
+
+  <div class="card p-3 shadow-sm">
+    <h5>Complaint Status</h5>
+    <div *ngIf="complaints.length === 0" class="text-muted">No complaints found</div>
+
+    <div *ngFor="let complaint of complaints" class="border p-2 mb-2 rounded">
+      <div class="d-flex justify-content-between">
+        <strong>{{ complaint.message }}</strong>
+        <span class="badge bg-secondary">{{ complaint.status }}</span>
+      </div>
+      <div class="text-muted">{{ complaint.createdAt | date:'short' }}</div>
+      <div *ngIf="complaint.adminNote">Admin Note: {{ complaint.adminNote }}</div>
+    </div>
+  </div>
+</div>
